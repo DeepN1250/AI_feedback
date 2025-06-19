@@ -10,7 +10,7 @@ function HistoryDisplay({ onBack }) {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/feedback/history');
+        const res = await axios.get('https://ai-feedback-mldy.onrender.com/api/feedback/history');
         setHistory(res.data);
       } catch (err) {
         console.error('Error fetching history:', err);
